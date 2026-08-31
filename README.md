@@ -1,8 +1,10 @@
 # Armuda
 
-![Armuda app icon](Assets/Branding/Armuda-App-Icon.png)
-
 Armuda is CyFi Network's interactive Unity environment for exploring connected glyphs, knowledge nodes, and their attached interfaces.
+
+## Public preview downloads
+
+Armuda `0.1.0` packages are published on the [GitHub release page](https://github.com/CyrusLabSF/armuda/releases/tag/v0.1.0). The Android APK targets Magic Leap 2 / OpenXR on x86-64 and is production-signed. The Windows x64 archive is currently unsigned, so Windows SmartScreen may display a warning.
 
 ## Current controls
 
