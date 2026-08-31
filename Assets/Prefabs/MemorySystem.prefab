@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6938685018800080346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6328944451028970971}
+  - component: {fileID: 1727931387496924865}
+  - component: {fileID: 6111173924951348025}
+  - component: {fileID: 3216335065683597928}
+  - component: {fileID: 2474717550302149352}
+  - component: {fileID: 2344415326881587314}
+  - component: {fileID: 1241907853735015465}
+  - component: {fileID: 1841946742012222014}
+  - component: {fileID: 8411412369920143806}
+  - component: {fileID: 5099760322510560370}
+  - component: {fileID: 8141714154427745539}
+  - component: {fileID: 7792541670351476390}
+  - component: {fileID: 6318876450683353295}
+  - component: {fileID: 7473943524710116862}
+  - component: {fileID: 2560163334143826883}
+  - component: {fileID: 6036579529279039490}
+  - component: {fileID: 6502553800748085245}
+  - component: {fileID: 3474648468540903970}
+  m_Layer: 0
+  m_Name: MemorySystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6328944451028970971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727931387496924865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99515b6e7c1d5141bf8397130d7c226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fogSystem: {fileID: 0}
+  fogMaterial: {fileID: 0}
+  allowEmotionControl: 1
+  baseIntensity: 0.5
+--- !u!114 &6111173924951348025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37c23311a538274d8e0346b874a809c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingestFolder: IngestedTopics
+  matchLogPath: D:/ArTusCloud-Deployment/UNIVERcity/Logs/VectorMatchLog.csv
+  enableLogging: 1
+--- !u!114 &3216335065683597928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e1b47d83356b240887e6743a23a349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventHistory: []
+  maxMemoriesPerEvent: 5
+  exportPath: D:/ArTusCloud-Deployment/UNIVERcity/Episodes/
+  enableSpeech: 1
+--- !u!114 &2474717550302149352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4064c0f2aace44aa7cbbc8cc4826bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpeech: 1
+  recentReflectionCount: 3
+--- !u!114 &2344415326881587314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ac8e039b7743e4bac54d4ee01ad21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpeech: 1
+  allowConfidenceAdjustment: 1
+--- !u!114 &1241907853735015465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76b6bfafd4c28744eafcccd4ec0ca410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beliefNodePrefab: {fileID: 0}
+  contradictionNodePrefab: {fileID: 0}
+  jsonPath: D:/ArTusCloud-Deployment/UNIVERcity/Exports/MemoryTrail.json
+  spread: 10
+--- !u!114 &1841946742012222014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f36289e26425fa4db3a20603d735423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonPath: D:/ArTusCloud-Deployment/UNIVERcity/Exports/MemoryTrail.json
+  csvPath: D:/ArTusCloud-Deployment/UNIVERcity/Exports/MemoryTrail.csv
+  logPath: D:/ArTusCloud-Deployment/UNIVERcity/Logs/MemoryTrailExportLog.txt
+--- !u!114 &8411412369920143806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eaea0d424ee8a4eb1d2e77831068fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5099760322510560370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd8f158a1ebed94f982712a5ce0ef5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseRotationSpeed: 10
+  rotationAxis: {x: 0, y: 1, z: 0}
+  enableEmotionInfluence: 1
+  emotionMultiplier: 1.5
+--- !u!114 &8141714154427745539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a04dd929d0d1e446bfab2280f46d1db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7792541670351476390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b413ed8a3b982fb47adda9260debb7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trails: []
+  currentGoalTrail:
+    trailName: 
+    relatedMemoryContents: []
+    dominantEmotion: 
+    strengthScore: 0
+    confidenceEstimate: 0
+    creationTime: 
+    lastUpdated: 
+--- !u!114 &6318876450683353295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93367fa2a629f4d4e9cee6fdd3943d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7473943524710116862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029ab33fa8fd20344bddffdccb2a6c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2560163334143826883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eaea0d424ee8a4eb1d2e77831068fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6036579529279039490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e9a64b50ead8e468d2d0b4988a26bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pendingTopics: []
+--- !u!114 &6502553800748085245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ac8e039b7743e4bac54d4ee01ad21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpeech: 1
+  allowConfidenceAdjustment: 1
+--- !u!114 &3474648468540903970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6938685018800080346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd61518c5f130c4ea6425a1812d57b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

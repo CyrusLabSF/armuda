@@ -1,0 +1,50 @@
+# Unity-generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Generated files accidentally nested beneath Assets
+Assets/Library/
+Assets/_Recovery/
+
+# Build and release outputs
+[Bb]uild/
+[Bb]uilds/
+[Rr]eleases/
+ArTus Build/
+
+# IDE files
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# OS files and local secrets
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+
+# Crash and diagnostic artifacts
+sysinfo.txt
+*.stacktrace
