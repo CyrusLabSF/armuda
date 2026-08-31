@@ -1,5 +1,7 @@
 # Armuda
 
+![Armuda app icon](Assets/Branding/Armuda-App-Icon.png)
+
 Armuda is CyFi Network's interactive Unity environment for exploring connected glyphs, knowledge nodes, and their attached interfaces.
 
 ## Current controls
