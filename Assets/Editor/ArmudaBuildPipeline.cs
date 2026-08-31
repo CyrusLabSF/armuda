@@ -15,6 +15,7 @@ public static class ArmudaBuildPipeline
     private const string Version = "0.1.0";
     private const string AndroidIdentifier = "com.cyfinetwork.armuda";
     private const string StandaloneIdentifier = "com.cyfinetwork.armuda";
+    private const string IconAssetPath = "Assets/Branding/Armuda-App-Icon.png";
 
     [MenuItem("Armuda/Build/Validate Packaging")]
     public static void ValidateProject()
@@ -117,6 +118,31 @@ public static class ArmudaBuildPipeline
         PlayerSettings.resizableWindow = true;
         PlayerSettings.runInBackground = true;
         PlayerSettings.usePlayerLog = true;
+        ApplyBranding();
+    }
+
+    private static void ApplyBranding()
+    {
+        Texture2D icon = AssetDatabase.LoadAssetAtPath<Texture2D>(IconAssetPath);
+        if (icon == null)
+        {
+            throw new BuildFailedException($"Armuda branding icon is missing: {IconAssetPath}");
+        }
+
+        ApplyIcon(NamedBuildTarget.Standalone, icon);
+        ApplyIcon(NamedBuildTarget.Android, icon);
+    }
+
+    private static void ApplyIcon(NamedBuildTarget target, Texture2D icon)
+    {
+        int[] sizes = PlayerSettings.GetIconSizes(target, IconKind.Any);
+        if (sizes.Length == 0)
+        {
+            return;
+        }
+
+        Texture2D[] icons = Enumerable.Repeat(icon, sizes.Length).ToArray();
+        PlayerSettings.SetIcons(target, icons, IconKind.Any);
     }
 
     private static void PrepareAndroidGradleEnvironment()
