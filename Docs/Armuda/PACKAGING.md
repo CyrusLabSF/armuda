@@ -27,7 +27,17 @@ By default builds are written beneath `Releases/Armuda-0.1.0`. Batch builds can 
 5. Verify glyph selection and attached HUD behavior.
 6. Install the APK on a Magic Leap 2 test device and verify its OpenXR interactions.
 
-The packaged APK is test-signed. Configure a private production keystore before publishing it to a store or distributing it as a final release.
+## Android release signing
+
+Initialize a dedicated Armuda signing key once:
+
+```powershell
+.\Tools\Packaging\Initialize-ArmudaAndroidSigning.ps1
+```
+
+The initializer creates an RSA release key and an owner-only signing configuration beneath `%USERPROFILE%\.armuda\signing`. Passwords and keystore material stay outside the Unity project and are excluded from source and release archives. `ArmudaBuildPipeline.BuildAndroid` requires this configuration and refuses to fall back to a debug certificate.
+
+Back up the entire private signing directory in a secure credential vault. Losing the signing key can prevent future APK upgrades. Set `ARMUDA_ANDROID_SIGNING_CONFIG` to an alternate configuration path when building on another trusted workstation or CI service.
 
 ## GitHub release
 

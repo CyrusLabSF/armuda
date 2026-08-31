@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEditor;
@@ -16,6 +17,8 @@ public static class ArmudaBuildPipeline
     private const string AndroidIdentifier = "com.cyfinetwork.armuda";
     private const string StandaloneIdentifier = "com.cyfinetwork.armuda";
     private const string IconAssetPath = "Assets/Branding/Armuda-App-Icon.png";
+    private const string SigningConfigEnvironmentVariable = "ARMUDA_ANDROID_SIGNING_CONFIG";
+    private const string DefaultSigningConfigFileName = "android-signing.env";
 
     [MenuItem("Armuda/Build/Validate Packaging")]
     public static void ValidateProject()
@@ -50,11 +53,19 @@ public static class ArmudaBuildPipeline
     public static void BuildAndroid()
     {
         ApplyPlayerSettings();
-        PrepareAndroidGradleEnvironment();
-        EditorUserBuildSettings.buildAppBundle = false;
-        string root = ResolveOutputRoot();
-        string outputPath = Path.Combine(root, "Android", $"Armuda-{Version}.apk");
-        Build(BuildTargetGroup.Android, BuildTarget.Android, outputPath);
+        try
+        {
+            ApplyAndroidSigning();
+            PrepareAndroidGradleEnvironment();
+            EditorUserBuildSettings.buildAppBundle = false;
+            string root = ResolveOutputRoot();
+            string outputPath = Path.Combine(root, "Android", $"Armuda-{Version}.apk");
+            Build(BuildTargetGroup.Android, BuildTarget.Android, outputPath);
+        }
+        finally
+        {
+            ClearAndroidSigning();
+        }
     }
 
     private static void Build(BuildTargetGroup group, BuildTarget target, string outputPath)
@@ -143,6 +154,101 @@ public static class ArmudaBuildPipeline
 
         Texture2D[] icons = Enumerable.Repeat(icon, sizes.Length).ToArray();
         PlayerSettings.SetIcons(target, icons, IconKind.Any);
+    }
+
+    private static void ApplyAndroidSigning()
+    {
+        string configPath = Environment.GetEnvironmentVariable(SigningConfigEnvironmentVariable);
+        if (string.IsNullOrWhiteSpace(configPath))
+        {
+            configPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+                ".armuda",
+                "signing",
+                DefaultSigningConfigFileName);
+        }
+
+        configPath = Path.GetFullPath(Environment.ExpandEnvironmentVariables(configPath));
+        if (!File.Exists(configPath))
+        {
+            throw new BuildFailedException(
+                $"Armuda Android signing configuration was not found at {configPath}. " +
+                "Run Tools/Packaging/Initialize-ArmudaAndroidSigning.ps1 first.");
+        }
+
+        Dictionary<string, string> config = LoadSigningConfig(configPath);
+        string keystorePath = ReadSigningSetting(config, "ARMUDA_ANDROID_KEYSTORE_PATH");
+        if (!Path.IsPathRooted(keystorePath))
+        {
+            string configDirectory = Path.GetDirectoryName(configPath) ?? string.Empty;
+            keystorePath = Path.Combine(configDirectory, keystorePath);
+        }
+
+        keystorePath = Path.GetFullPath(Environment.ExpandEnvironmentVariables(keystorePath));
+        if (!File.Exists(keystorePath))
+        {
+            throw new BuildFailedException($"Armuda Android keystore was not found at {keystorePath}.");
+        }
+
+        string alias = ReadSigningSetting(config, "ARMUDA_ANDROID_KEY_ALIAS");
+        PlayerSettings.Android.useCustomKeystore = true;
+        PlayerSettings.Android.keystoreName = keystorePath;
+        PlayerSettings.Android.keystorePass = ReadSigningSetting(config, "ARMUDA_ANDROID_KEYSTORE_PASSWORD");
+        PlayerSettings.Android.keyaliasName = alias;
+        PlayerSettings.Android.keyaliasPass = ReadSigningSetting(config, "ARMUDA_ANDROID_KEY_PASSWORD");
+
+        Debug.Log($"[Armuda Build] Production Android signing configured for alias '{alias}'.");
+    }
+
+    private static Dictionary<string, string> LoadSigningConfig(string configPath)
+    {
+        Dictionary<string, string> config = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        foreach (string rawLine in File.ReadAllLines(configPath))
+        {
+            string line = rawLine.Trim();
+            if (line.Length == 0 || line.StartsWith("#", StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+            int separator = line.IndexOf('=');
+            if (separator <= 0)
+            {
+                throw new BuildFailedException($"Invalid Armuda signing configuration line in {configPath}.");
+            }
+
+            string key = line.Substring(0, separator).Trim();
+            string value = line.Substring(separator + 1).Trim();
+            config[key] = value;
+        }
+
+        return config;
+    }
+
+    private static string ReadSigningSetting(Dictionary<string, string> config, string key)
+    {
+        string environmentValue = Environment.GetEnvironmentVariable(key);
+        if (!string.IsNullOrWhiteSpace(environmentValue))
+        {
+            return environmentValue.Trim();
+        }
+
+        if (config.TryGetValue(key, out string configValue) && !string.IsNullOrWhiteSpace(configValue))
+        {
+            return configValue.Trim();
+        }
+
+        throw new BuildFailedException($"Armuda Android signing setting '{key}' is missing.");
+    }
+
+    private static void ClearAndroidSigning()
+    {
+        PlayerSettings.Android.keystorePass = string.Empty;
+        PlayerSettings.Android.keyaliasPass = string.Empty;
+        PlayerSettings.Android.keyaliasName = string.Empty;
+        PlayerSettings.Android.keystoreName = string.Empty;
+        PlayerSettings.Android.useCustomKeystore = false;
+        AssetDatabase.SaveAssets();
     }
 
     private static void PrepareAndroidGradleEnvironment()
