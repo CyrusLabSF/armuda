@@ -25,8 +25,10 @@ Armuda `0.1.1` packages are published on the [GitHub release page](https://githu
 
 Packaging and verification details are in [Docs/Armuda/PACKAGING.md](Docs/Armuda/PACKAGING.md).
 
-## Community status
+## Community licensing
 
-This package is prepared for community review and contribution. The current rights notice is intentionally conservative; select and approve an open-source license before treating the project as open source.
+Armuda uses a split-license model. CyFi-authored code and project documentation identified in [CODE_LICENSE_SCOPE.md](CODE_LICENSE_SCOPE.md) are open source under [MPL-2.0](LICENSES/MPL-2.0.txt). Artwork, scenes, characters, story material, branding, and other first-party creative assets remain protected under the [community-preview content license](LICENSE-CONTENT.md) and [trademark policy](TRADEMARKS.md). Third-party material retains its own terms.
 
-Copyright © 2026 CyFi Network Corporation. All Rights Reserved. See [LICENSE.md](LICENSE.md) and [NOTICE.md](NOTICE.md).
+Contributors must follow [CONTRIBUTING.md](CONTRIBUTING.md) and accept the [Contributor License Agreement](CONTRIBUTOR_LICENSE_AGREEMENT.md).
+
+Copyright © 2026 CyFi Network Corporation. See [LICENSE.md](LICENSE.md) and [NOTICE.md](NOTICE.md).

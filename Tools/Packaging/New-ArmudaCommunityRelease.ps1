@@ -26,6 +26,10 @@ $topLevelFiles = @(
     'CODE_OF_CONDUCT.md',
     'SECURITY.md',
     'LICENSE.md',
+    'LICENSE-CONTENT.md',
+    'CODE_LICENSE_SCOPE.md',
+    'CONTRIBUTOR_LICENSE_AGREEMENT.md',
+    'TRADEMARKS.md',
     'NOTICE.md'
 )
 
@@ -33,7 +37,7 @@ foreach ($file in $topLevelFiles) {
     Copy-Item -LiteralPath (Join-Path $ProjectRoot $file) -Destination $stageRoot
 }
 
-$copyRoots = @('Assets', 'Packages', 'ProjectSettings', 'Docs\Armuda', 'Tools\Packaging')
+$copyRoots = @('.github', 'Assets', 'Packages', 'ProjectSettings', 'Docs\Armuda', 'LICENSES', 'Tools\Packaging')
 foreach ($relativeRoot in $copyRoots) {
     $source = Join-Path $ProjectRoot $relativeRoot
     $destination = Join-Path $stageRoot $relativeRoot

@@ -53,4 +53,4 @@ See [VERIFY_RELEASE.md](VERIFY_RELEASE.md) for tester-facing verification steps.
 
 ## GitHub release
 
-The source archive excludes Unity caches, generated builds, recovery scenes, IDE files, secrets, and signing material. The current rights notice is not an open-source license; approve a license before announcing an open-source release.
+The source archive excludes Unity caches, generated builds, recovery scenes, IDE files, secrets, and signing material. It must include the MPL-2.0 text, code-license scope, protected-content license, trademark policy, contributor agreement, notice, and pull-request template. Describe Armuda as a mixed-license project: covered CyFi-authored code is open source, while first-party creative content and branding remain protected.
