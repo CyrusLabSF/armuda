@@ -39,6 +39,18 @@ The initializer creates an RSA release key and an owner-only signing configurati
 
 Back up the entire private signing directory in a secure credential vault. Losing the signing key can prevent future APK upgrades. Set `ARMUDA_ANDROID_SIGNING_CONFIG` to an alternate configuration path when building on another trusted workstation or CI service.
 
+## Windows community preview
+
+The Windows build is intentionally distributed without Authenticode during the community-preview phase. Treat it as a portable preview rather than a consumer installer.
+
+- Publish Windows archives only through the official GitHub release page.
+- Publish SHA-256 hashes alongside every archive.
+- Do not instruct testers to disable Windows Security or Smart App Control.
+- Explain that Windows may display an unknown-publisher warning or block an unsigned executable.
+- Review the source and build locally when stronger provenance is required.
+
+See [VERIFY_RELEASE.md](VERIFY_RELEASE.md) for tester-facing verification steps.
+
 ## GitHub release
 
 The source archive excludes Unity caches, generated builds, recovery scenes, IDE files, secrets, and signing material. The current rights notice is not an open-source license; approve a license before announcing an open-source release.
