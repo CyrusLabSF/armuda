@@ -6,7 +6,7 @@ Armuda is CyFi Network Corporation's interactive Unity environment for exploring
 
 ## Public preview downloads
 
-Armuda `0.1.0` packages are published on the [GitHub release page](https://github.com/CyrusLabSF/armuda/releases/tag/v0.1.0). The Android APK targets Magic Leap 2 / OpenXR on x86-64 and is production-signed. The Windows x64 archive is currently unsigned, so Windows SmartScreen may display a warning.
+Armuda `0.1.1` packages are published on the [GitHub release page](https://github.com/CyrusLabSF/armuda/releases/tag/v0.1.1). The Android APK targets Magic Leap 2 / OpenXR on x86-64 and is production-signed. The Windows x64 archive is currently unsigned, so Windows SmartScreen may display a warning.
 
 ## Current controls
 
