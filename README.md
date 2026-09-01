@@ -2,7 +2,7 @@
 
 ![Armuda app icon](Assets/Branding/Armuda-App-Icon.png)
 
-Armuda is CyFi Network's interactive Unity environment for exploring connected glyphs, knowledge nodes, and their attached interfaces.
+Armuda is CyFi Network Corporation's interactive Unity environment for exploring connected glyphs, knowledge nodes, and their attached interfaces.
 
 ## Public preview downloads
 
@@ -28,3 +28,5 @@ Packaging and verification details are in [Docs/Armuda/PACKAGING.md](Docs/Armuda
 ## Community status
 
 This package is prepared for community review and contribution. The current rights notice is intentionally conservative; select and approve an open-source license before treating the project as open source.
+
+Copyright © 2026 CyFi Network Corporation. All Rights Reserved. See [LICENSE.md](LICENSE.md) and [NOTICE.md](NOTICE.md).

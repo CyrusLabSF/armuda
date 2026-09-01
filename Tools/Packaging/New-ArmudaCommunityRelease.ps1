@@ -6,7 +6,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$version = '0.1.0'
+$version = '0.1.1'
 $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
 $releaseName = "Armuda-Community-$version-$stamp"
 $stageRoot = Join-Path ([System.IO.Path]::GetTempPath()) $releaseName
@@ -25,7 +25,8 @@ $topLevelFiles = @(
     'CONTRIBUTING.md',
     'CODE_OF_CONDUCT.md',
     'SECURITY.md',
-    'LICENSE.md'
+    'LICENSE.md',
+    'NOTICE.md'
 )
 
 foreach ($file in $topLevelFiles) {

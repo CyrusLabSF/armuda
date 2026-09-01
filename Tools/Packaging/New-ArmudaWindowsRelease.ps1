@@ -1,11 +1,11 @@
 [CmdletBinding()]
 param(
     [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path,
-    [string]$OutputDirectory = (Join-Path (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path 'Releases\Armuda-0.1.0')
+    [string]$OutputDirectory = (Join-Path (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path 'Releases\Armuda-0.1.1')
 )
 
 $ErrorActionPreference = 'Stop'
-$version = '0.1.0'
+$version = '0.1.1'
 $source = Join-Path $ProjectRoot "Releases\Armuda-$version\Windows"
 $archivePath = Join-Path $OutputDirectory "Armuda-Windows-$version.zip"
 $stageName = "Armuda-Windows-$version-" + [guid]::NewGuid().ToString('N')

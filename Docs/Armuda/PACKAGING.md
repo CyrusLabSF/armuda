@@ -3,8 +3,8 @@
 ## Build identity
 
 - Product: `Armuda`
-- Company: `CyFi Network`
-- Version: `0.1.0`
+- Company: `CyFi Network Corporation`
+- Version: `0.1.1`
 - Android application ID: `com.cyfinetwork.armuda`
 - Android minimum SDK: 29
 - Android target: Magic Leap 2 / OpenXR
@@ -16,7 +16,7 @@
 - `Armuda > Build > Windows Desktop`
 - `Armuda > Build > Android APK`
 
-By default builds are written beneath `Releases/Armuda-0.1.0`. Batch builds can override the root with `-armudaOutputRoot <absolute-path>`.
+By default builds are written beneath `Releases/Armuda-0.1.1`. Batch builds can override the root with `-armudaOutputRoot <absolute-path>`.
 
 ## Required checks
 

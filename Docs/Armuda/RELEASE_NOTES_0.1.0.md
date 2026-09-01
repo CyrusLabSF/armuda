@@ -22,4 +22,4 @@ This packaging preview establishes the first repeatable Windows, Magic Leap 2 AP
 
 ## Release status
 
-The Windows player and Magic Leap 2 APK are testing previews. The APK uses a test signature; a production keystore is required before public store distribution. The included rights notice is not an open-source license, so a license must be approved before the GitHub repository is described as open source.
+The Windows player and Magic Leap 2 APK are public-preview builds. The APK is signed with Armuda's production release certificate. The included rights notice is not an open-source license, so a license must be approved before the GitHub repository is described as open source.

@@ -1,7 +1,11 @@
 # Rights notice
 
-Copyright 2026 CyFi Network. All rights reserved.
+Copyright © 2026 CyFi Network Corporation. All Rights Reserved.
 
-This preview package is provided for authorized testing, evaluation, and contribution review. No permission is granted to redistribute, sell, sublicense, or use the project or its assets outside those purposes without written authorization from CyFi Network.
+Armuda, its source code, original visual design, documentation, and first-party assets are proprietary works of CyFi Network Corporation.
 
-An approved open-source license should replace this notice before any release is represented as open source.
+This preview package is provided solely for authorized testing, evaluation, and contribution review. Except for rights expressly granted in writing, no permission is granted to copy, redistribute, sell, sublicense, modify, publish, or commercially use Armuda or its first-party assets.
+
+Third-party software and assets remain subject to their respective licenses and ownership terms. Nothing in this notice claims ownership of third-party material.
+
+This rights notice is not an open-source license. An approved license must replace or supplement it before Armuda is represented as open source.

@@ -12,8 +12,8 @@ using UnityEngine.SceneManagement;
 public static class ArmudaBuildPipeline
 {
     private const string ProductName = "Armuda";
-    private const string CompanyName = "CyFi Network";
-    private const string Version = "0.1.0";
+    private const string CompanyName = "CyFi Network Corporation";
+    private const string Version = "0.1.1";
     private const string AndroidIdentifier = "com.cyfinetwork.armuda";
     private const string StandaloneIdentifier = "com.cyfinetwork.armuda";
     private const string IconAssetPath = "Assets/Branding/Armuda-App-Icon.png";
@@ -117,7 +117,7 @@ public static class ArmudaBuildPipeline
         PlayerSettings.bundleVersion = Version;
         PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, AndroidIdentifier);
         PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Standalone, StandaloneIdentifier);
-        PlayerSettings.Android.bundleVersionCode = 1;
+        PlayerSettings.Android.bundleVersionCode = 2;
         PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel29;
         // Armuda's Android XR profile targets Magic Leap 2. Its Unity runtime
         // and native provider libraries require the Android x86-64 ABI.
@@ -129,6 +129,7 @@ public static class ArmudaBuildPipeline
         PlayerSettings.resizableWindow = true;
         PlayerSettings.runInBackground = true;
         PlayerSettings.usePlayerLog = true;
+        PlayerSettings.SplashScreen.backgroundColor = Color.black;
         ApplyBranding();
     }
 

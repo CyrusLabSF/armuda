@@ -1,6 +1,6 @@
 # Armuda 0.1.0 public preview
 
-Armuda `0.1.0` is the first public preview of CyFi Network's interactive Unity environment for exploring connected glyphs, knowledge nodes, and their attached interfaces.
+Armuda `0.1.0` is the first public preview of CyFi Network Corporation's interactive Unity environment for exploring connected glyphs, knowledge nodes, and their attached interfaces.
 
 ## Downloads
 
