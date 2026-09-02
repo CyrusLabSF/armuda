@@ -1,0 +1,29 @@
+{
+    "name": "Starfish Node B",
+    "type": "glyphware",
+    "category": "MarineLife",
+    "origin": "Armuda Ocean",
+    "description": "Second beacon node — used to balance or mirror the first Starfish in Armuda reflection systems.",
+    "url": "https://ocean.si.edu/ocean-life/invertebrates/starfish",
+    "hud": {
+        "layout": "radial",
+        "color": [ 1.0, 0.5, 0.3 ],
+        "buttons": [
+            {
+                "label": "Learn",
+                "action": "open_url",
+                "target": "https://ocean.si.edu/ocean-life/invertebrates/starfish"
+            },
+            {
+                "label": "Sync",
+                "action": "trigger_event",
+                "target": "belief_sync"
+            },
+            {
+                "label": "Visualize",
+                "action": "visual_overlay",
+                "target": "ArmudaReflection"
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+# 🌊 Armuda Environment (Master PNG List)
+
+### 🔹 Core Environment Assets
+- ocean_background.png → Default Armuda ocean backdrop
+- seabed.png → Base seabed texture
+- coral.png → Coral formations
+- rock.png → Rock formations
+- kelp.png → Kelp/seaweed plants
+
+### 🔹 Atmospheric Layers
+- fog_light.png → Light fog layer (surface ambiguity)
+- fog_dense.png → Dense fog layer (contradiction or confusion)
+- glow_ray.png → Sunlight or bioluminescent rays
+- depth_gradient.png → Gradient background to show depth
+
+### 🔹 Special Environmental Elements
+- whirlpool.png → Symbol of recursion or looping
+- fracture.png → Cracks in the seabed, symbolic instability
+- geyser.png → Knowledge burst or insight eruption
+- bubble_particles.png → Ambient ocean particles

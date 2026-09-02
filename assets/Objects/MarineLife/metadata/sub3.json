@@ -1,0 +1,29 @@
+{
+    "name": "Submarine Gamma",
+    "type": "glyphware",
+    "category": "MarineLife",
+    "origin": "Armuda Ocean",
+    "description": "A lightweight observation sub, designed to monitor Armuda’s emotional and belief fields.",
+    "url": "https://earth.google.com/web",
+    "hud": {
+        "layout": "pie",
+        "color": [ 0.3, 0.6, 1.0 ],
+        "buttons": [
+            {
+                "label": "Observe",
+                "action": "open_url",
+                "target": "https://earth.google.com/web"
+            },
+            {
+                "label": "Emotion Map",
+                "action": "trigger_event",
+                "target": "ArmudaEmotionMap"
+            },
+            {
+                "label": "Visualize",
+                "action": "visual_overlay",
+                "target": "ArmudaMoodField"
+            }
+        ]
+    }
+}

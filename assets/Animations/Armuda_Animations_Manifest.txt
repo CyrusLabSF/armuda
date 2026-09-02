@@ -1,0 +1,13 @@
+jellyfish_pulse_idle.gif, jellyfish_pulse_alert.gif (low vs high emotion)
+
+cube_rise.gif, cube_pulse_conflict.gif, cube_sink_resolved.gif
+
+trail_draw_clockwise.gif, trail_draw_counter.gif (direction signifies positive/negative drift)
+
+reflection_ripple_small.gif, reflection_ripple_large.gif
+
+fog_roll_light.gif, fog_roll_heavy.gif (contradiction intensity)
+
+ingest_spark.gif (new data intake), simulation_wave.gif (sandbox run)
+
+Day/Night pairs: _day, _night

@@ -1,0 +1,29 @@
+{
+    "name": "Starfish Node A",
+    "type": "glyphware",
+    "category": "MarineLife",
+    "origin": "Armuda Ocean",
+    "description": "A beacon of balance � rotates knowledge between domains.",
+    "url": "https://www.wikipedia.org",
+    "hud": {
+        "layout": "radial",
+        "color": [ 1.0, 0.6, 0.2 ],
+        "buttons": [
+            {
+                "label": "Info",
+                "action": "open_url",
+                "target": "https://en.wikipedia.org/wiki/Starfish"
+            },
+            {
+                "label": "Reflect",
+                "action": "trigger_event",
+                "target": "belief_reflection"
+            },
+            {
+                "label": "Glow",
+                "action": "visual_pulse",
+                "target": "ArmudaGlow"
+            }
+        ]
+    }
+}

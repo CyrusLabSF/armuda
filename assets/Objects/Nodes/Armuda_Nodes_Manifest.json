@@ -1,0 +1,76 @@
+{
+  "nodes": [
+    {
+      "name": "core_neutral",
+      "color": [0.25, 0.52, 0.90],
+      "emotion": "neutral",
+      "intensity": 0.6,
+      "spread_radius": 75.0,
+      "count": 150,
+      "shape": "sphere"
+    },
+    {
+      "name": "core_curious",
+      "color": [0.25, 0.85, 0.75],
+      "emotion": "curious",
+      "intensity": 0.8,
+      "spread_radius": 85.0,
+      "count": 200,
+      "shape": "swirl"
+    },
+    {
+      "name": "core_focus",
+      "color": [1.00, 0.85, 0.30],
+      "emotion": "focus",
+      "intensity": 0.7,
+      "spread_radius": 90.0,
+      "count": 220,
+      "shape": "tight_orbit"
+    },
+    {
+      "name": "core_awe",
+      "color": [0.78, 0.60, 1.00],
+      "emotion": "awe",
+      "intensity": 1.0,
+      "spread_radius": 100.0,
+      "count": 250,
+      "shape": "spiral"
+    },
+    {
+      "name": "core_calm",
+      "color": [0.20, 0.60, 0.95],
+      "emotion": "calm",
+      "intensity": 0.5,
+      "spread_radius": 70.0,
+      "count": 120,
+      "shape": "wave"
+    },
+    {
+      "name": "core_conflict",
+      "color": [1.00, 0.25, 0.25],
+      "emotion": "conflict",
+      "intensity": 0.9,
+      "spread_radius": 95.0,
+      "count": 300,
+      "shape": "chaos_spike"
+    },
+    {
+      "name": "core_reflective",
+      "color": [0.55, 0.55, 1.00],
+      "emotion": "reflective",
+      "intensity": 0.7,
+      "spread_radius": 80.0,
+      "count": 180,
+      "shape": "soft_cluster"
+    },
+    {
+      "name": "core_emergent",
+      "color": [0.6, 0.9, 1.0],
+      "emotion": "emergent",
+      "intensity": 0.95,
+      "spread_radius": 110.0,
+      "count": 350,
+      "shape": "spiral_wave"
+    }
+  ]
+}

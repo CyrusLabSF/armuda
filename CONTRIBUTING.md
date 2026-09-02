@@ -1,15 +1,17 @@
 # Contributing to Armuda
 
-Thank you for helping improve Armuda.
+Thank you for helping develop Armuda.
 
-1. Read `LICENSE.md`, `CODE_LICENSE_SCOPE.md`, `LICENSE-CONTENT.md`, `TRADEMARKS.md`, and `CONTRIBUTOR_LICENSE_AGREEMENT.md`.
-2. Create a focused branch from the current main development branch.
-3. Keep generated Unity folders, credentials, private data, and unlicensed third-party material out of commits.
-4. Open and save the project with Unity `6000.4.0f1`.
-5. Run `Armuda > Build > Validate Packaging` before submitting a change.
-6. Describe the user-visible behavior, platforms tested, and any scene or prefab changes in the pull request.
-7. Complete the Contributor License Agreement checkbox in the pull-request template.
+1. Keep navigation consistent: left click selects, right click opens attachments/actions, and middle-button drag controls camera look.
+2. Keep runtime data out of source control. Never commit profiles, worlds, logs, uploads, API keys, or provider tokens.
+3. Run the unit suite before opening a change:
 
-Code contributions accepted into the covered paths are released under MPL-2.0. Creative content and branding are not open source unless CyFi expressly designates them otherwise.
+   ```powershell
+   $env:PYTHONUTF8='1'
+   python -m unittest discover -s "Armuda World Directory Map/Armuda/tests" -p "test_*.py" -v
+   ```
 
-Do not submit API keys, signing certificates, keystores, private data, proprietary third-party assets, or employer-owned material without authorization.
+4. For visual changes, also run `run_panel_visual_smoke.py` and inspect its captures at the supported minimum window size.
+5. Explain user-facing interaction changes in the pull request.
+
+By submitting a pull request, contributors must affirm the terms in `CONTRIBUTOR_LICENSE_AGREEMENT.md`. Code contributions are received under that agreement and the applicable MPL-2.0 outbound scope; creative content is not automatically open-sourced.

@@ -1,0 +1,60 @@
+{
+    "jeopardy_cubes": [
+        {
+            "name": "cube_base",
+            "path": "assets/Objects/Jeopardy_Cubes/cube_base.png",
+            "category": "neutral",
+            "color": [ 1.0, 1.0, 1.0 ],
+            "size": 4.5
+        },
+        {
+            "name": "cube_philosophy",
+            "path": "assets/Objects/Jeopardy_Cubes/cube_philosophy.png",
+            "category": "wisdom",
+            "color": [ 0.4, 0.6, 1.0 ],
+            "size": 4.8
+        },
+        {
+            "name": "cube_biology",
+            "path": "assets/Objects/Jeopardy_Cubes/cube_biology.png",
+            "category": "life_sciences",
+            "color": [ 0.2, 0.8, 0.3 ],
+            "size": 4.8
+        },
+        {
+            "name": "cube_cyber",
+            "path": "assets/Objects/Jeopardy_Cubes/cube_cyber.png",
+            "category": "defense",
+            "color": [ 1.0, 0.3, 0.3 ],
+            "size": 5.0
+        },
+        {
+            "name": "cube_contradiction",
+            "path": "assets/Objects/Jeopardy_Cubes/cube_contradiction.png",
+            "category": "logic_conflict",
+            "color": [ 1.0, 0.2, 0.8 ],
+            "size": 5.2
+        },
+        {
+            "name": "cube_reflection",
+            "path": "assets/Objects/Jeopardy_Cubes/cube_reflection.png",
+            "category": "introspection",
+            "color": [ 0.7, 0.7, 1.0 ],
+            "size": 5.2
+        },
+        {
+            "name": "cube_unlock",
+            "path": "assets/Objects/Jeopardy_Cubes/cube_unlock.png",
+            "category": "discovery",
+            "color": [ 1.0, 0.9, 0.3 ],
+            "size": 5.5
+        },
+        {
+            "name": "cube_artifact",
+            "path": "assets/Objects/Jeopardy_Cubes/cube_artifact.png",
+            "category": "hybrid",
+            "color": [ 0.5, 0.8, 1.0 ],
+            "size": 5.8
+        }
+    ]
+}

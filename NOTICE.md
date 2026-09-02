@@ -9,3 +9,4 @@ Armuda is a mixed-license project. CyFi-authored software code and project docum
 The Armuda name, CyFi Network Corporation name, logos, characters, worlds, stories, original interface artwork, and related brand identity are not granted under the MPL.
 
 Third-party packages, libraries, engines, fonts, and assets remain the property of their respective owners and are governed by their own terms. Nothing in this notice claims ownership of third-party material or expands its license.
+

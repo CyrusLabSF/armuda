@@ -1,0 +1,24 @@
+# 💠 Armuda Emotions (Master PNG List)
+
+### 🔹 Core Emotions (Seeded)
+- anger.png → Anger, intensity and conflict
+- joy.png → Joy, happiness and positivity
+- surprise.png → Surprise, shock or novelty
+- sadness.png → Sadness, grief or loss
+- fear.png → Fear, anxiety or threat awareness
+- disgust.png → Disgust, rejection or aversion
+- shame.png → Shame, guilt and self-awareness
+- pride.png → Pride, confidence and accomplishment
+
+### 🔹 Expansion Emotions (Future Growth)
+- hope.png → Aspiration, optimism and future orientation
+- curiosity.png → Exploration and learning drive
+- awe.png → Wonder, vastness and transcendence
+- love.png → Connection, empathy and bonding
+- trust.png → Safety, reliability and openness
+- anticipation.png → Readiness and expectation
+
+### 🔹 Meta Emotions (Complex Blends)
+- confusion.png → Overlap, uncertainty, contradiction
+- resilience.png → Endurance and adaptive strength
+- serenity.png → Calmness, balance and peace

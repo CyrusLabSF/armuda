@@ -1,0 +1,19 @@
+# 🌐 Armuda Zones (Master PNG List)
+
+### 🔹 Core Zones (Current)
+- logic_zone.png → Reasoning & order
+- memory_zone.png → Recall & trails
+- defense_zone.png → Protection & resilience
+- emotion_zone.png → Emotional dynamics
+
+### 🔹 Expansion Zones (Future Growth)
+- cyber_zone.png → Digital/cyber awareness
+- auto_zone.png → Automation/robotics space
+- culture_zone.png → Cultural knowledge
+- environment_zone.png → Ecology & Earth systems
+- creation_zone.png → Fabrication/innovation hub
+
+### 🔹 Special Zones (Meta)
+- contradiction_zone.png → Space of tension/conflict
+- reflection_zone.png → Self-observation, mirrors
+- infinity_zone.png → Abstract limitless zone

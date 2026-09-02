@@ -1,50 +1,32 @@
-# Unity-generated folders
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
-[Mm]emoryCaptures/
-[Rr]ecordings/
-
-# Generated files accidentally nested beneath Assets
-Assets/Library/
-Assets/_Recovery/
-
-# Build and release outputs
-[Bb]uild/
-[Bb]uilds/
-[Rr]eleases/
-ArTus Build/
-
-# IDE files
-.vs/
-.vscode/
-.idea/
-*.csproj
-*.sln
-*.suo
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
-*.opendb
-*.VC.db
-
-# OS files and local secrets
-.DS_Store
-Thumbs.db
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.coverage
 .env
 .env.*
 !.env.example
-*.keystore
-*.jks
-*.p12
-*.mobileprovision
 
-# Crash and diagnostic artifacts
-sysinfo.txt
-*.stacktrace
+build/
+release/
+dist/
+
+# Local run artifacts and identities
+Armuda/
+armuda_live_capture.err.log
+armuda_live_capture.out.log
+Armuda World Directory Map/Armuda/Data/**
+!Armuda World Directory Map/Armuda/Data/__init__.py
+!Armuda World Directory Map/Armuda/Data/state_sync.py
+!Armuda World Directory Map/Armuda/Data/diagnostics_bridge.py
+!Armuda World Directory Map/Armuda/Data/health_receiver.py
+!Armuda World Directory Map/Armuda/Data/artus_connection.json
+!Armuda World Directory Map/Armuda/Data/hud_configs.json
+!Armuda World Directory Map/Armuda/Data/image_backend.json
+!Armuda World Directory Map/Armuda/Data/image_generation_connection.json
+
+# User-imported media and generated content
+Armuda World Directory Map/Armuda/assets/UserImages/
+Armuda World Directory Map/Armuda/assets/UserMeshes/
+assets/BuilderLibrary/Uploads/*
+!assets/BuilderLibrary/Uploads/.gitkeep

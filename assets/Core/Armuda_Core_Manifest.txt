@@ -1,0 +1,11 @@
+armuda_core_light.png, armuda_core_dark.png
+
+artus_core_mark.png (hybrid torus+jellyfish)
+
+univercity_crest_flat.png, univercity_crest_emboss.png
+
+Anchors: world_anchor.png, trail_anchor.png, reflection_anchor.png
+
+Status sigils: belief_core.png, integration_core.png, contradiction_core.png (used as HUD glyphs too)
+
+Conventions: single source of truth icons in multiple sizes: @1x @2x @4x

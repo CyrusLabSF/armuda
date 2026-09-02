@@ -1,0 +1,12 @@
+{
+    "trail": {
+        "path": "trail.png",
+        "color": "#88ccff",
+        "trigger": "memory_update"
+    },
+    "contradiction": {
+        "path": "contradiction.png",
+        "color": "#ff4444",
+        "trigger": "conflict_detected"
+    }
+}

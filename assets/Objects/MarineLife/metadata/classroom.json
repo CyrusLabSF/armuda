@@ -1,0 +1,33 @@
+{
+    "name": "Classroom",
+    "type": "glyphware",
+    "category": "MarineLife",
+    "origin": "Armuda Ocean",
+    "description": "A submerged learning chamber for training simulations and real-world connections.",
+    "url": "https://classroom.google.com",
+    "login": {
+        "user": "guest",
+        "pass": "demo"
+    },
+    "hud": {
+        "layout": "banner",
+        "color": [ 0.25, 0.7, 1.0 ],
+        "buttons": [
+            {
+                "label": "Enter",
+                "action": "open_url",
+                "target": "https://classroom.google.com"
+            },
+            {
+                "label": "Notes",
+                "action": "open_local",
+                "target": "D:/ArTusCloud-Deployment/UNIVERcity/Education"
+            },
+            {
+                "label": "Simulate",
+                "action": "run_script",
+                "target": "scripts/simulation_lesson.py"
+            }
+        ]
+    }
+}

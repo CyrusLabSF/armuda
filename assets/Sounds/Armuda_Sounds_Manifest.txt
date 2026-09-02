@@ -1,0 +1,29 @@
+# 🎵 Armuda Sounds (Master Sound Asset List)
+
+### 🔹 Ambient Environment
+- ocean_ambient.wav → Background hum of the ocean
+- deep_current.wav → Low-frequency underwater current sound
+- bubble_stream.wav → Rising bubble sounds
+- fog_drift.wav → Muffled drifting fog sound
+
+### 🔹 Zone & Emotion Tones
+- logic_zone_tone.wav → Subtle hum for Logic Zone
+- memory_zone_tone.wav → Echoing chime for Memory Zone
+- defense_zone_tone.wav → Resonant shield-like tone
+- emotion_zone_tone.wav → Pulsing wave for Emotion Zone
+- anger_tone.wav → Sharp, rising intensity sound
+- joy_tone.wav → Bright, uplifting chime
+- fear_tone.wav → Hollow, echoing sound
+- sadness_tone.wav → Soft, descending tone
+
+### 🔹 Interaction Sounds
+- cube_drop.wav → Jeopardy cube falling into place
+- artifact_discover.wav → Chime for discovering an artifact
+- trail_spark.wav → Spark when a memory trail activates
+- contradiction_crack.wav → Sharp crackling sound
+- reflection_ripple.wav → Soft water ripple sound
+
+### 🔹 Expansion (Future)
+- cyber_zone_tone.wav → Digital hum for Cyber Zone
+- solar_node_tone.wav → Soft electrical resonance for Solar Node
+- biolab_node_tone.wav → Organic bubbling/biological sound

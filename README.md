@@ -1,34 +1,39 @@
-# Armuda
+# Armuda Community Preview
 
-![Armuda app icon](Assets/Branding/Armuda-App-Icon.png)
+Armuda is a local-first 3D world-building environment rendered with GLFW and OpenGL. This preview keeps the cursor available for ordinary UI interaction while using explicit pointer gestures for world navigation.
 
-Armuda is CyFi Network Corporation's interactive Unity environment for exploring connected glyphs, knowledge nodes, and their attached interfaces.
+## Controls
 
-## Public preview downloads
+- Left click: select controls, objects, and glyph nodes.
+- Right click: open a glyph node attachment/HUD or an object's action menu.
+- Hold the mouse-wheel button and drag: look in any direction.
+- Mouse wheel: move between first- and third-person distance.
+- `W`, `A`, `S`, `D`: move; `Space` / `Shift`: change depth.
+- `Ctrl+S`: save; `Ctrl+Z` / `Ctrl+Y`: undo / redo.
 
-Armuda `0.1.1` packages are published on the [GitHub release page](https://github.com/CyrusLabSF/armuda/releases/tag/v0.1.1). The Android APK targets Magic Leap 2 / OpenXR on x86-64 and is production-signed. The Windows x64 archive is an unsigned community-preview build, so Windows may warn or block it. Download only from the official release and follow the [release verification guide](Docs/Armuda/VERIFY_RELEASE.md).
+## Run from source
 
-## Current controls
+Use Python 3.14 on Windows:
 
-- Move the pointer freely at all times; no Tab/Alt cursor-mode switch is required.
-- Click or tap normal controls to activate them.
-- Hold and drag the middle mouse button to look in any direction.
-- Left-click a configured glyph/node to select it.
-- Right-click a configured glyph/node to open its attached HUD.
-- On touch devices, drag outside the UI to look, tap a glyph to select it, and long-press it to open its HUD.
+```powershell
+python -m pip install -r requirements-desktop.txt
+python "Armuda World Directory Map/Armuda/run_forever.py"
+```
 
-## Open the project
+Armuda stores source-run data inside the source package. Packaged builds store profiles, worlds, logs, settings, and uploads under `%LOCALAPPDATA%\Armuda`, keeping application files clean and writable.
 
-1. Install Unity `6000.4.0f1` with Windows Build Support and Android Build Support.
-2. Open this folder in Unity Hub.
-3. Open `Assets/ArTus_2026.unity`.
+Friend discovery, requests, notifications, and direct messages are persistent and fully usable between profiles on the same installation. Cross-device community communication requires a hosted identity and message relay; the preview labels these channels as on-device rather than implying internet delivery.
 
-Packaging and verification details are in [Docs/Armuda/PACKAGING.md](Docs/Armuda/PACKAGING.md).
+## Build targets
 
-## Community licensing
+- Windows desktop: `powershell -ExecutionPolicy Bypass -File packaging/build_windows.ps1`
+- GitHub source archive: `powershell -ExecutionPolicy Bypass -File packaging/build_github_release.ps1`
+- Android: see `packaging/android/README.md`. The desktop renderer requires a mobile rendering/input port before a real APK can be produced.
 
-Armuda uses a split-license model. CyFi-authored code and project documentation identified in [CODE_LICENSE_SCOPE.md](CODE_LICENSE_SCOPE.md) are open source under [MPL-2.0](LICENSES/MPL-2.0.txt). Artwork, scenes, characters, story material, branding, and other first-party creative assets remain protected under the [community-preview content license](LICENSE-CONTENT.md) and [trademark policy](TRADEMARKS.md). Third-party material retains its own terms.
+## AI image configuration
 
-Contributors must follow [CONTRIBUTING.md](CONTRIBUTING.md) and accept the [Contributor License Agreement](CONTRIBUTOR_LICENSE_AGREEMENT.md).
+The desktop client never stores provider secrets. The bundled image service reads `OPENAI_API_KEY` or another configured provider token from the process environment. Preview mode works without a provider key.
 
-Copyright © 2026 CyFi Network Corporation. See [LICENSE.md](LICENSE.md) and [NOTICE.md](NOTICE.md).
+## Release status
+
+This is a community preview. CyFi-authored code and project documentation identified in `CODE_LICENSE_SCOPE.md` are licensed under MPL-2.0. Armuda creative content and branding remain protected under `LICENSE-CONTENT.md` and `TRADEMARKS.md`. See `LICENSE.md` and `NOTICE.md` before redistributing or contributing.

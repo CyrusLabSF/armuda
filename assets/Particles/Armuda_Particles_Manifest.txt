@@ -1,0 +1,17 @@
+# ✨ Armuda Particles (Master PNG List)
+
+### 🔹 Core Particle Effects
+- bubble_particle.png → Single bubble element for rising effects
+- glow_particle.png → Soft glowing dot particle
+- spark_particle.png → Spark particle for contradiction effects
+- dust_particle.png → Ambient underwater dust motes
+
+### 🔹 Trail & Aura Effects
+- trail_particle.png → Particles used for memory trail swirls
+- aura_particle.png → Expanding glow particle for belief aura
+- ripple_particle.png → Particle simulating water ripple expansion
+
+### 🔹 Symbolic Particles (Future)
+- contradiction_particle.png → Fractured shard particle
+- pulse_particle.png → Pulsing orb particle (heartbeat/energy)
+- flame_particle.png → Burning fragment particle for stress/strain states

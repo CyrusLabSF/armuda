@@ -1,0 +1,12 @@
+{
+    "name": "Sealion",
+    "type": "glyphware",
+    "description": "An aquatic glyph node that grants passage to learning portals.",
+    "category": "MarineLife",
+    "origin": "Armuda Ocean",
+    "url": "https://www.youtube.com",
+    "login": {
+        "user": "guest",
+        "pass": "demo"
+    }
+}

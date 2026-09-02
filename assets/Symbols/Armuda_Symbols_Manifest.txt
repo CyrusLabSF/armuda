@@ -1,0 +1,72 @@
+{
+  "trail": {
+    "path": "trail.png",
+    "category": "core",
+    "trigger": "memory_update",
+    "color": "#88CCFF",
+    "behavior": "ripple"
+  },
+  "contradiction": {
+    "path": "contradiction.png",
+    "category": "core",
+    "trigger": "conflict_detected",
+    "color": "#FF4444",
+    "behavior": "fracture_pulse"
+  },
+  "reflection": {
+    "path": "reflection.png",
+    "category": "core",
+    "trigger": "sandbox_reflection",
+    "color": "#B0FFFF",
+    "behavior": "wave_expand"
+  },
+  "aura": {
+    "path": "aura.png",
+    "category": "core",
+    "trigger": "belief_reinforced",
+    "color": "#FFD54A",
+    "behavior": "soft_glow"
+  },
+  "fishing_line": {
+    "path": "fishing_line.png",
+    "category": "retrieval",
+    "trigger": "retrieval_start",
+    "color": "#66BBFF",
+    "behavior": "vertical_drop"
+  },
+  "anchor_symbol": {
+    "path": "anchor_symbol.png",
+    "category": "retrieval",
+    "trigger": "anchor_established",
+    "color": "#4A90E2",
+    "behavior": "fade_in"
+  },
+  "compass_symbol": {
+    "path": "compass_symbol.png",
+    "category": "retrieval",
+    "trigger": "navigation_event",
+    "color": "#55CC88",
+    "behavior": "rotation"
+  },
+  "gateway": {
+    "path": "gateway.png",
+    "category": "expansion",
+    "trigger": "domain_access",
+    "color": "#AA66FF",
+    "behavior": "portal_pulse"
+  },
+  "merge_symbol": {
+    "path": "merge_symbol.png",
+    "category": "expansion",
+    "trigger": "belief_merge",
+    "color": "#33FFAA",
+    "behavior": "fusion_spin"
+  },
+  "spiral_symbol": {
+    "path": "spiral_symbol.png",
+    "category": "expansion",
+    "trigger": "recursive_growth",
+    "color": "#FF77AA",
+    "behavior": "inward_spiral"
+  }
+}

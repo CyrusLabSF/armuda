@@ -1,0 +1,23 @@
+# 🖥️ Armuda UI (Master PNG List)
+
+### 🔹 Core UI Elements
+- chatbox_pill.png → Main Armuda chatbox (pill design)
+- chatbox_holo.png → Holographic chat window variation
+- button_base.png → Standard button design
+- slider_base.png → Base slider for adjustments
+- toggle_switch.png → On/Off toggle switch
+
+### 🔹 Logging & Feedback
+- export_icon.png → Symbol for CSV/Power BI export
+- log_indicator.png → Visual marker for system logging
+- pulse_indicator.png → Indicator for real-time reflection/simulation
+
+### 🔹 Navigation & Overlays
+- minimap_frame.png → Frame for mini-map overlay
+- hud_frame.png → Heads-up display frame
+- zone_filter.png → Dropdown or filter icon for zone selection
+
+### 🔹 Expansion UI (Future)
+- voice_command_icon.png → Symbol for speech input
+- gesture_icon.png → Symbol for gesture input (AR/VR/Magic Leap)
+- alert_popup.png → UI symbol for contradictions or warnings

@@ -1,0 +1,25 @@
+{
+    "artifacts": [
+        {
+            "name": "scroll",
+            "path": "assets/Objects/ArtiFacts/scroll.png",
+            "category": "knowledge",
+            "pos": [ 0, -10, 15 ],
+            "scale": 6.0
+        },
+        {
+            "name": "key_triple",
+            "path": "assets/Objects/ArtiFacts/key_triple.png",
+            "category": "access",
+            "pos": [ 8, -12, 10 ],
+            "scale": 5.5
+        },
+        {
+            "name": "orb",
+            "path": "assets/Objects/ArtiFacts/orb.png",
+            "category": "power",
+            "pos": [ -5, -14, -20 ],
+            "scale": 8.0
+        }
+    ]
+}

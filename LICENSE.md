@@ -25,3 +25,4 @@ Third-party software, packages, fonts, engines, and assets remain subject to the
 Contributions are accepted under [CONTRIBUTOR_LICENSE_AGREEMENT.md](CONTRIBUTOR_LICENSE_AGREEMENT.md) and the applicable outbound license for the contributed material.
 
 No rights are granted for material that is not expressly identified as licensed.
+

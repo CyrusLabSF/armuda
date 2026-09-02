@@ -1,0 +1,29 @@
+{
+    "name": "Submarine Beta",
+    "type": "glyphware",
+    "category": "MarineLife",
+    "origin": "Armuda Ocean",
+    "description": "A red exploration vessel — deeper ocean scanner node.",
+    "url": "https://www.nasa.gov",
+    "hud": {
+        "layout": "pie",
+        "color": [ 0.9, 0.2, 0.2 ],
+        "buttons": [
+            {
+                "label": "Launch",
+                "action": "open_url",
+                "target": "https://www.nasa.gov"
+            },
+            {
+                "label": "Telemetry",
+                "action": "open_local",
+                "target": "D:/ArTusCloud-Deployment/Data+Output/Telemetry"
+            },
+            {
+                "label": "Simulate",
+                "action": "run_script",
+                "target": "scripts/depth_scan.py"
+            }
+        ]
+    }
+}
